@@ -13,33 +13,47 @@
     color: $color-light;
     font-size: 42px;
     font-weight: 700;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     text-align: center;
+    @media all and (min-width:768px){
+        font-size: 80px;
+    }
+    @media all and (min-width:768px){
+        font-size: 100px;
+        width: 60%;
+        margin-bottom: 20px;
+    }
 }
 .hero-txt{
     font-family: $font-roboto;
     font-size: 16px;
     color: $color-light;
+    @media all and (min-width768px){
+        font-size: 24px;
+    }
 }
 .arrow-down{
     width: 45px;
     height: 45px;
     border-radius: 100%;
+    border: none;
     background-color: $color-light;
     margin: 40px;
     a{
         img{
-            transform: translate(65%,150%);
+            transform: translate(2%,30%);
         }
     }
 }
 .tips{
     padding: 30px 15px 30px 15px;
     @media all and (min-width: 768px){
-        width: 90%;
+        width: 95%;
+        padding: 60px 40px;
     }
     @media all and (min-width: 1200px){
-        width: 50%;
+        width: 60%;
         margin: auto;
     }
     span{
@@ -52,10 +66,20 @@
     font-family: $font-roboto-slab;
     font-weight: bold;
     font-size: 24px;
+    @media all and (min-width: 768px){
+        font-size: 26px;
+    }
+    @media all and (min-width: 1200px){
+        font-size: 32px;
+    }
 }
 .tips-txt{
     font-family: $font-roboto;
+    color: #4a4a4a;
     font-size: 18px;
+    @media all and (min-width: 768px){
+        font-size: 20px;
+    }
 }
 .btn-go{
     width: 75px;
@@ -63,11 +87,16 @@
     background-color: $color-light;
     border: $color-btn solid 2px;
     border-radius: 20px;
+    margin-top: 15px;
     font-family: $font-roboto;
+    font-weight: 500;
     font-size: 20px;
     font-weight: 500;
     color: $color-btn;
     text-align: center;
+    @media all and (min-width: 1200px){
+        width: 25%;
+    }
 }
 .reasons{
     background-color: $color-background-reasons;
@@ -78,6 +107,12 @@
     font-weight: bold;
     font-size: 24px;
     text-align: center;
+    @media all and (min-width: 768px){
+        font-size: 26px;
+    }
+    @media all and (min-width: 1200px){
+        font-size: 32px;
+    }
 }
 .grid-container{
     display: grid;
@@ -86,30 +121,52 @@
     justify-items: center;
     @media all and (min-width:768px){
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 45%;
     }
 }
 .article{
     width: 60%;
+    @media all and (min-width: 768px){
+        width: auto;
+    }
 }
 .item1{
     grid-row: 1/2;
+    @media all and (min-width: 768px){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 }
 .item2{
     grid-row: 2/3;
+    @media all and (min-width: 768px){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }
 .item3{
     grid-row: 3/4;
+    @media all and (min-width: 768px){
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
 }
 .article-title{
     font-family: $font-roboto-slab;
     font-weight: bold;
     font-size: 18px;
     text-align: center;
+    @media all and (min-width: 768px){
+        font-size: 24px;
+    }
 }
 .article-txt{
     font-family: $font-roboto;
     font-size: 18px;
     text-align: center;
+    @media all and (min-width: 768px){
+        font-size: 20px;
+    }
 }
 .btn-reasons{
     grid-row: 4/5;
@@ -123,4 +180,8 @@
     border: none;
     border-radius: 20px;
     margin: 30px 0;
+    @media all and (min-width: 768px){
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
 }
