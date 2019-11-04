@@ -1,0 +1,55 @@
+.footer{
+    position: relative;
+    background-color: $color-background-footer;
+    padding: 30px 15px 45px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-up{
+    width: 45px;
+    height: 45px;
+    background-color: $color-light;
+    border-radius: 100%;
+    position: absolute;
+    transform: translateY(-495%);
+    a{
+        img{
+            transform: translate(60%,50%);
+        }
+    }
+}
+.footer-menu{
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.menu-item{
+    font-family: $font-roboto;
+    font-size: 16px;
+    color: $color-light;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.social-media{
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.copy{
+    font-family: $font-roboto;
+    font-size: 14px;
+    color: $color-light;
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heart-icon{
+    color: $color-btn;
+}

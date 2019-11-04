@@ -1,0 +1,126 @@
+.hero{
+    height: 100vh;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.hero-title{
+    font-family: $font-roboto-slab;
+    color: $color-light;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.hero-txt{
+    font-family: $font-roboto;
+    font-size: 16px;
+    color: $color-light;
+}
+.arrow-down{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: $color-light;
+    margin: 40px;
+    a{
+        img{
+            transform: translate(65%,150%);
+        }
+    }
+}
+.tips{
+    padding: 30px 15px 30px 15px;
+    @media all and (min-width: 768px){
+        width: 90%;
+    }
+    @media all and (min-width: 1200px){
+        width: 50%;
+        margin: auto;
+    }
+    span{
+        font-family: $font-roboto;
+        font-size: 16px;
+        color: #8ccbea;
+    }
+}
+.tips-title{
+    font-family: $font-roboto-slab;
+    font-weight: bold;
+    font-size: 24px;
+}
+.tips-txt{
+    font-family: $font-roboto;
+    font-size: 18px;
+}
+.btn-go{
+    width: 75px;
+    height: 45px;
+    background-color: $color-light;
+    border: $color-btn solid 2px;
+    border-radius: 20px;
+    font-family: $font-roboto;
+    font-size: 20px;
+    font-weight: 500;
+    color: $color-btn;
+    text-align: center;
+}
+.reasons{
+    background-color: $color-background-reasons;
+    padding: 30px 15px 30px 15px;
+}
+.reasons-title{
+    font-family: $font-roboto-slab;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    @media all and (min-width:768px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.article{
+    width: 60%;
+}
+.item1{
+    grid-row: 1/2;
+}
+.item2{
+    grid-row: 2/3;
+}
+.item3{
+    grid-row: 3/4;
+}
+.article-title{
+    font-family: $font-roboto-slab;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.article-txt{
+    font-family: $font-roboto;
+    font-size: 18px;
+    text-align: center;
+}
+.btn-reasons{
+    grid-row: 4/5;
+    width: 185px;
+    height: 45px;
+    background-color: $color-btn;
+    font-family: $font-roboto;
+    font-size: 20px;
+    font-weight: 500;
+    color: $color-light;
+    border: none;
+    border-radius: 20px;
+    margin: 30px 0;
+}
