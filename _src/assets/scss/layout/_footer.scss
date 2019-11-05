@@ -4,6 +4,11 @@
     padding: 35px 15px 45px 15px;
     display: flex;
     flex-direction: column;
+    
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     @media all and (min-width: 768px){
@@ -23,13 +28,8 @@
     border-radius: 100%;
     border: none;
     position: absolute;
-    transform: translateY(-215px);
-    @media all and (min-width: 768px){
-        transform: translate(330px,-75px);
-    }
-    @media all and (min-width: 1200px){
-        transform: translate(0,-75px);
-    }
+    align-self: center;
+    transform: translateY(-60px);
     img{
             transform: translate(60%,50%);
     }
