@@ -12,6 +12,7 @@ html{
     justify-content: flex-end;
 }
 .hero-title{
+    
     font-family: $font-roboto-slab;
     color: $color-light;
     font-size: 2.625rem;
@@ -24,8 +25,10 @@ html{
     }
     @media all and (min-width:1200px){
         font-size: 6.25rem;
-        width: 60%;
         margin-bottom: 20px;
+    }
+    span{
+        display: block;
     }
 }
 .hero-txt{
