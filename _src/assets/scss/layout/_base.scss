@@ -185,16 +185,16 @@ html{
     grid-row: 4/5;
     width: 195px;
     height: 45px;
-    background-color: $color-btn;
+    background-color: $color-light;
     font-family: $font-roboto;
     font-size: 1.25rem;
     font-weight: 500;
-    color: $color-light;
+    color: $color-btn;
     text-align: center;
     padding: 10px 0;
-    border: none;
+    border: $color-btn 2px solid;
     border-radius: 20px;
-    margin: 30px 0;
+    margin: 50px 0px 30px 0px;
     transition: transform ease 0.8s, background-color ease 0.8s, color ease 0.8s;
     &:hover {
         transform: scale(1.05);
@@ -205,5 +205,6 @@ html{
     @media all and (min-width: 768px){
         grid-column: 2/3;
         grid-row: 2/3;
+        margin: 30px 0px;
     }
 }

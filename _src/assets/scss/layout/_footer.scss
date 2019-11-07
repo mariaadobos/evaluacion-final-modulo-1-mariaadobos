@@ -89,8 +89,9 @@
     color: $color-light;
     line-height: 0.625rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+
     @media all and (min-width: 768px){
         order: -1;
         align-items: flex-start;
